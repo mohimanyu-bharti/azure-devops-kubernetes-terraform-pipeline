@@ -23,6 +23,14 @@ jobs:
 
     - job: Job2
       displayName: "My Second Job"
+      dependsOn: Job1
       steps:
           - script: echo Hello, world second job!
+            displayName: "Run a one-line script"
+
+    - job: Job3
+      displayName: "My Third Job"
+      dependsOn: Job2
+      steps:
+          - script: echo Hello, world third job!
             displayName: "Run a one-line script"
