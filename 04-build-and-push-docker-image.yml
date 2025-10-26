@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'masteringdevops-docker'
-        repository: 'masteringdevops/currency-exchange'
+        repository: 'mohimanyu/masteringdevops/currency-exchange'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
